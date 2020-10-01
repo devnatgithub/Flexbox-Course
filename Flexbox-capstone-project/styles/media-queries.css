@@ -1,0 +1,82 @@
+@media (max-width: 615px) {    
+    .navbar-wrapper {
+        display: grid;        
+        justify-items: left;        
+    }
+
+    .logo {        
+        justify-content: flex-start;          
+    } 
+   
+    .dropdown {
+        display: flex;  
+        float: left;        
+    }
+
+    a.stacked-bars {
+        display: inline-block;
+        padding: 20px; 
+        background-color:  rgba(0, 0, 0, 0);
+        color: #11122b;
+        font-size: 1.5rem;
+    }
+
+    a.stacked-bars:hover, a.stacked-bars:focus {
+        background-color: rgba(40, 38, 202, 0.808);
+        color: rgb(237, 237, 243);                
+    }
+    
+    .my-name {        
+        padding-left: 20px;     
+    }  
+
+   /* To allow dropdown-content to be seen, display: none; for .link-box-left and right*/    
+    .link-box-left , .link-box-right {
+        display: none;     
+    }    
+    
+    .dropdown-content.active {      
+        position: absolute;
+        background-color: rgba(40, 38, 202, 0.808);
+        width: 100vw;        
+        border: none;
+    }
+
+    .dropdown-content button {
+        border: none;
+        height: 60px;
+        width: 100vw;
+        text-align: center;
+        background-color: rgba(40, 38, 202, 0.808);
+        cursor: pointer;       
+        text-decoration: none;
+        font-family: 'Grandstander', cursive;
+    }
+
+    .dropdown-content button:hover {
+        background-color: rgb(237, 237, 243);
+        color: rgba(60, 58, 202, 0.808);
+        font-weight: bold;        
+    }
+
+
+    /*programming the dropdown in  JS within <script> </script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+    */
+
+    .dropdown-content {
+        display: none;
+    }
+
+
+    #test.active a {
+        display: block;
+    }
+
+    #test a {
+        display: none;
+    }
+   
+}

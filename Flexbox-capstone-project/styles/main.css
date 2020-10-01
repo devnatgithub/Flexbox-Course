@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin-left: -20px;        
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 60px;      
+    background-color: rgba(60, 58, 202, 0.808);   
+}
+
+button {
+    border: none;
+    outline: none;
+    min-width: 110px;
+    height: 60px;
+    font-family: "Font Awesome\ 5 Free", 'Grandstander', cursive;
+    color: rgb(237, 237, 243);
+    background-color: rgba(0, 0, 0, 0);   
+    cursor: pointer;
+}
+
+.left-links-buttons {
+    display: flex;
+    justify-content:flex-start;   
+    align-items: center;
+    width: 450px;
+}
+
+.logo {
+    display: flex;
+    flex-basis: 250px;
+    justify-content: center;
+    align-items: center;    
+    cursor: pointer;    
+}
+
+.stacked-bars {
+    display: none;        
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.my-name {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 60px;
+    cursor: pointer;
+}
+
+.my-name i {
+    padding-top: 9px;
+    font-size: 1.3rem;            
+}
+
+.my-name p {
+    margin-top: 8px;
+}
+
+.link-box-left, .link-box-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(40, 38, 202, 0.808);    
+}
+
+.link-box-left button:hover, .link-box-right button:hover {
+    background-color: whitesmoke;
+    color: rgba(60, 58, 202, 0.808);
+}
+
+.dropdown {
+    display: none;
+}

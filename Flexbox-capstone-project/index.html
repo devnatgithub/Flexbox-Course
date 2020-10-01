@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulting Homepage</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/bd779e3e50.js" crossorigin="anonymous"></script>   
+    
+    <link rel="stylesheet" media="screen" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/media-queries.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar-wrapper"> 
+            <div class="left-links-buttons">
+                
+                <div class="logo">                    
+                    <button>
+                        <div class="dropdown">
+                            <a href="#" onclick="myFunction()" class="stacked-bars">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </div>    
+                        <div class="my-name">                       
+                            <i class="fas fa-file-prescription"></i> 
+                            <p>Consulting</p>                            
+                        </div> 
+                    </button>
+                </div>
+                <div class="link-box-left">                  
+                    <a href="#"><button>Drug Development</button></a>                                  
+                    <a href="#"><button>Drug<br>Profiling</button></a> 
+                </div>
+            </div>
+            
+            <div class="link-box-right">                 
+                <a href="#"><button>Contact Me</button></a> 
+            </div>
+
+            <div class="dropdown">
+              <!--  <a href="#" onclick="myFunction()" class="stacked-bars">
+                    <i class="fas fa-bars"></i>
+                </a>-->
+                
+                <div id="test" >
+                    <a href="#"><button>Drug Development</button></a>                                 
+                    <a href="#"><button>Drug Profiling</button></a>
+                    <a href="#"><button>Contact Me</button></a>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <script>
+    
+        function myFunction() {
+            document.getElementById("test").classList.toggle("active");
+        }
+
+    </script>
+</body>
+
+
+</html>
