@@ -12,17 +12,19 @@
     <link rel="stylesheet" media="screen" href="styles/main.css"/>
     <link rel="stylesheet" href="styles/media-queries.css">
 </head>
+
 <body>
     <div class="container">
         <div class="navbar-wrapper"> 
-            <div class="left-links-buttons">
-                
+
+            <div class="left-links-buttons">                
                 <div class="logo">                    
                     <button>
                         <div class="dropdown">
                             <a href="#" onclick="myFunction()" class="stacked-bars">
                                 <i class="fas fa-bars"></i>
                             </a>
+                            
                         </div>    
                         <div class="my-name">                       
                             <i class="fas fa-file-prescription"></i> 
@@ -30,38 +32,34 @@
                         </div> 
                     </button>
                 </div>
+
                 <div class="link-box-left">                  
-                    <a href="#"><button>Drug Development</button></a>                                  
+                    <a href="#"><button>Drug<br>Development</button></a>                                  
                     <a href="#"><button>Drug<br>Profiling</button></a> 
-                </div>
+                </div>            
             </div>
             
             <div class="link-box-right">                 
                 <a href="#"><button>Contact Me</button></a> 
             </div>
 
-            <div class="dropdown">
-              <!--  <a href="#" onclick="myFunction()" class="stacked-bars">
-                    <i class="fas fa-bars"></i>
-                </a>-->
-                
-                <div id="test" >
+            <div class="dropdown">             
+                <div id="dropdown-content" >
                     <a href="#"><button>Drug Development</button></a>                                 
                     <a href="#"><button>Drug Profiling</button></a>
                     <a href="#"><button>Contact Me</button></a>
-                </div>
+                </div>                
             </div>
+
         </div>
     </div> 
     
     <script>
     
         function myFunction() {
-            document.getElementById("test").classList.toggle("active");
+            document.getElementById("dropdown-content").classList.toggle("active");
         }
 
     </script>
 </body>
-
-
 </html>
