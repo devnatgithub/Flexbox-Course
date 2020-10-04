@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulting Homepage with JH Solution</title>
+
+    <script src="https://kit.fontawesome.com/bd779e3e50.js" crossorigin="anonymous"></script> 
+   
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet"> 
+      
+    
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        html {
+            font-family: 'Grandstander', cursive;
+        }
+
+        .navbar {
+            background: rgba(60, 58, 202, 0.808);            
+        }
+
+        .navbar div {
+            display: none;
+        }
+
+        .navbar .toggle,
+        .navbar .brand {
+            display: inline-block;
+        }
+
+        .navbar .link {
+            display: block;
+            text-align: center;
+            padding: 2em;
+            text-decoration: none;
+            background: rgba(40, 38, 202, 0.808);
+            color: whitesmoke;
+        }
+
+        .navbar .link:hover,
+        .navbar .link:active {
+            background: whitesmoke;
+            color: rgba(60, 58, 202, 0.808);
+        }
+
+        .navbar .brand {
+            width: 10em;
+            text-align: center;
+            line-height: 5px;  /*Rx icon and Consulting are closer this way, 
+            making the navbar less wide*/
+            padding: 1em 1em 0em 1em;
+            color: whitesmoke;            
+        }
+
+        .navbar .brand i {
+            font-size: 1.6em; /*added*/
+        }
+
+        .navbar a {
+            text-decoration: none;                                  
+        }
+
+        .navbar .toggle {
+            padding: 0.8em;            
+            color: #3d3d47;
+            font-size: 1.9em; /*added*/           
+        }
+        
+        @media (min-width: 48em) {
+            .navbar {
+                display: flex;
+                align-items: center;                               
+            }
+
+            .navbar div {
+                display: flex;                               
+            }
+
+            .navbar .left,
+            .navbar .right {
+                display: flex;
+                flex: 1;
+            }
+        
+            .navbar .link {
+                width: auto;
+            }
+
+            .navbar .right {
+                justify-content: flex-end;
+            }
+
+            .navbar .toggle {                
+                display: none;               
+            }
+        }
+
+        @media (max-width: 48em) {
+            .navbar.active .toggle {
+                background: rgba(40, 38, 202, 0.808);
+                color: whitesmoke;
+            }
+
+            .navbar .brand {
+                padding: 0px;/*text-align: left; changed for padding-left 0px*/
+                top: 50%;
+                transform: translate(0, 30%);
+            }
+
+            .navbar .brand p {
+                margin-bottom: 0px;
+            }
+
+            .navbar.active div {
+                display: block;
+            }
+        }        
+    </style>
+    
+</head>
+
+<body>    
+    <div class="navbar">
+        <a href="#" class="toggle" id="navHamburger">
+            <i class="fas fa-bars"></i>
+        </a>
+        <a href="#" class="brand">            
+            <i class="fas fa-file-prescription"></i><br> 
+            <p>Consulting</p> 
+        </a>
+
+        <div class="left">
+            <a href="#" class="link">
+                Drug Development
+            </a>
+
+            <a href="#" class="link">
+                Drug Profiling
+            </a>
+        </div>
+
+        <div class="right">
+            <a href="#" class="link">
+                Contact Me
+            </a>
+        </div>
+
+    </div>
+
+</body>
+<script>
+     const navHamburger = document.querySelector('#navHamburger');
+     navHamburger.addEventListener('click', (e) => {
+        navHamburger.parentElement.classList.toggle('active');
+    })
+</script>
+</html>
